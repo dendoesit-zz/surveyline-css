@@ -42,7 +42,7 @@
       @media (max-width: 576px) {
         #header nav.navbar .navbar-nav {
           height: 100vh; } }
-      @media (max-width: 768px) {
+      @media (max-width: 992px) {
         #header nav.navbar .navbar-nav {
           height: 100vh; } }
       #header nav.navbar .navbar-nav .nav-link {
@@ -52,9 +52,9 @@
         margin: 0 0 0 2.5rem;
         padding: 0 0 3px 0;
         border-bottom: 2px solid transparent; }
-        @media (max-width: 768px) {
+        @media (max-width: 992px) {
           #header nav.navbar .navbar-nav .nav-link {
-            margin: .5rem 0;
+            margin: .3rem 20px;
             padding: .5rem 0;
             text-align: center;
             background-color: #F7991F;
@@ -62,17 +62,67 @@
             height: auto;
             color: #162035;
             font-size: 17px;
-            font-weight: 600;
+            font-weight: 500;
+            padding-right:20px;
+              border:none;
             text-transform: uppercase; } }
         #header nav.navbar .navbar-nav .nav-link:hover, #header nav.navbar .navbar-nav .nav-link.active {
           border-bottom: 2px solid #F7991F;
+            background-color:#162035;
+            color:#fff;
           -webkit-transition: all .1s ease-in;
           transition: all .1s ease-in; }
-          @media (max-width: 768px) {
+        @media (max-width: 992px) {
             #header nav.navbar .navbar-nav .nav-link:hover, #header nav.navbar .navbar-nav .nav-link.active {
               border: none; } }
-      #header nav.navbar .menu-large {
+        #header #headingOne a[aria-expanded="true"]{
+            background-color:#162035 !important;
+             color:white !important;
+        }
+        .accordionangle{
+            float:right;
+        } 
+        #header .nav-item{
+            max-height:100%;
+        }
+        #header nav.navbar .menu-large {
         position: static !important; }
+        #navbarTogglerSubMenu .nav-link{
+            background-color:#b0bbcc !important;
+            color:white !important;
+        }
+        #navbarTogglerSubMenu .nav-link a{
+            padding-left:20px !important;
+        }
+        .inferior-menu{
+            color:white;
+            margin-left:25px;
+            padding-right:25px;
+            width:90%;
+            display:block;
+            font-size:20px;
+            padding:8px;
+            height:40px;
+        }
+        @media (max-width: 520px) {
+            .inferior-menu{
+               height:100%; 
+            }
+        }
+        #navbarTogglerDemo04 a:hover,#navbarTogglerDemo05 a:hover,#navbarTogglerDemo06 a:hover{
+            color:white;
+            border-bottom:3px solid #F7991F;
+            text-decoration:none;
+            max-height:100%;
+        }
+#header h4{
+    line-height:25.5px;
+}
+#header #navbarTogglerDemo04, #header #navbarTogglerDemo04, #header #navbarTogglerDemo04{
+    padding-top:10px;
+    padding-bottom:10px;
+    
+}
       #header nav.navbar .megamenu {
         background: transparent;
         top: 70px;
@@ -80,7 +130,7 @@
         @media (max-width: 576px) {
           #header nav.navbar .megamenu {
             display: none !important; } }
-        @media (max-width: 768px) {
+        @media (max-width: 992px) {
           #header nav.navbar .megamenu {
             display: none !important; } }
         #header nav.navbar .megamenu .menuwrapper {
@@ -126,7 +176,7 @@
             margin-top: 3px;
             color: #F7991F;
             font-size: 14px; }
-      @media (max-width: 768px) {
+      @media (max-width: 992px) {
         #header nav.navbar .navbar-toggler {
           padding: 0px 15px 0 0; } }
       #header nav.navbar .navbar-toggler i {
@@ -134,7 +184,11 @@
         font-size: 1.7rem; }
       #header nav.navbar .navbar-brand img {
         width: 284px; }
-      @media (max-width: 768px) {
+      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+           #header nav.navbar .navbar-brand img {
+            height:100%;}
+      }
+      @media (max-width: 992px) {
         #header nav.navbar .navbar-brand {
           margin-top: 5px;
           padding-left: 15px; }
@@ -143,7 +197,7 @@
       @media screen and (min-width: 1200px) {
         #header nav.navbar .dropdown-menu.mobile-nav {
           display: none !important; } }
-      @media (max-width: 768px) {
+      @media (max-width: 992px) {
         #header nav.navbar .navbar-collapse {
           background-color: #61708c;
           width: 100%;
@@ -157,7 +211,7 @@
           padding: 0; }
           #header nav.navbar .dropdown-menu.mobile-nav .nav-link {
             background-color: #b0bbcc;
-            margin: 1.2rem 0;
+            margin: .5rem 20px;
             color: #ffffff;
             text-align: left;
             padding-left: 1.5rem;
@@ -179,7 +233,7 @@
         height: 720px;
         margin-bottom: 0; } }
     #header #topbanner .hero-text {
-      width: 675px;
+      width: 630px;
       text-align: left;
       position: absolute;
       top: 25vh;
@@ -312,14 +366,14 @@
 
 .mobile-service {
   display: none; }
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     .mobile-service {
       display: block; } }
   @media (max-width: 576px) {
     .mobile-service {
       display: block; } }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .dt-services {
     display: none; } }
 
@@ -368,6 +422,10 @@
     #homeabout .call-us .number {
       font-size: 32px;
       font-weight: 700; }
+    @media (max-width: 576px) {
+    #homeabout .call-us .number {
+      font-size: 28px;
+      font-weight: 700; } }
   #homeabout .about-ricslogo {
     margin-top: 4.5rem; }
 
@@ -400,7 +458,7 @@
         transform: translate3d(0%, 1318px, 0); } }
   #ourservices h1 {
     font-size: 32px;
-    color: #162035; }
+    color: #fff; }
     @media (max-width: 576px) {
       #ourservices h1 {
         text-align: center; } }
@@ -534,7 +592,7 @@
     #trustpilotreview .trustpilot-mobile .carousel .carousel-indicators li {
       width: 15px;
       height: 15px;
-      background-color: #B0BBCC;
+      background-color: #8a929e;
       border-radius: 50%; }
     #trustpilotreview .trustpilot-mobile .carousel .carousel-indicators .active {
       background-color: #ffffff; }
@@ -599,6 +657,10 @@
           margin: 1.2rem auto 2rem auto; } }
     #homeenquiry .container p {
       color: #ffffff; }
+    @media (min-width: 1850px) {
+        #homeenquiry .container p {
+      color: #b8b8b8; }
+    }
     #homeenquiry .container .enquiry-img {
       position: relative;
       top: 30%; }
@@ -607,7 +669,7 @@
           display: none; } }
       @media (max-width: 768px) {
         #homeenquiry .container .enquiry-img {
-          top: 57% !important; } }
+          top: 0 !important; } }
 
 #topbanner-about {
   height: 200px; }
@@ -871,6 +933,7 @@
       .ourservice-wrapper.subpages #WhereweBegin .call-action .call-us .number {
         font-size: 32px;
         font-weight: 700; }
+
 
 #trustpilotrate {
   background-color: #F8FAFF;
